@@ -1,0 +1,194 @@
+
+Array
+(
+    [0] =&gt; stdClass Object
+        (
+            [ADD_DATE] =&gt; DateTime?
+        )
+
+    [1] =&gt; stdClass Object
+        (
+            [CLOSE_PRICE] =&gt; Decimal?
+        )
+
+    [2] =&gt; stdClass Object
+        (
+            [CONCENSUS_CURRENCY] =&gt; String?
+        )
+
+    [3] =&gt; stdClass Object
+        (
+            [CONCENSUS_CURRENCY_CLOSE_PRICE] =&gt; Decimal?
+        )
+
+    [4] =&gt; stdClass Object
+        (
+            [CONSENSUS_NUM_EST] =&gt; Decimal?
+        )
+
+    [5] =&gt; stdClass Object
+        (
+            [EXCHANGE] =&gt; String?
+        )
+
+    [6] =&gt; stdClass Object
+        (
+            [EXCHANGE_CODE] =&gt; String?
+        )
+
+    [7] =&gt; stdClass Object
+        (
+            [EXCHANGE_CURRENCY] =&gt; String?
+        )
+
+    [8] =&gt; stdClass Object
+        (
+            [EXCHANGE_CURRENCY_TARGET_PRICE] =&gt; Decimal?
+        )
+
+    [9] =&gt; stdClass Object
+        (
+            [EXCHANGE_CURRENCY_TPCHG] =&gt; Decimal?
+        )
+
+    [10] =&gt; stdClass Object
+        (
+            [EXCHANGE_CURRENCY_TPCHG_PCT] =&gt; Decimal?
+        )
+
+    [11] =&gt; stdClass Object
+        (
+            [EXCHANGE_NAME] =&gt; String?
+        )
+
+    [12] =&gt; stdClass Object
+        (
+            [FINTOOL_NAME] =&gt; String?
+        )
+
+    [13] =&gt; stdClass Object
+        (
+            [FINTOOLID] =&gt; Int64?
+        )
+
+    [14] =&gt; stdClass Object
+        (
+            [ID_RECOMENDATION] =&gt; Short?
+        )
+
+    [15] =&gt; stdClass Object
+        (
+            [LATEST_CLOSE_PRICE] =&gt; Decimal?
+        )
+
+    [16] =&gt; stdClass Object
+        (
+            [LATEST_DATE] =&gt; DateTime?
+        )
+
+    [17] =&gt; stdClass Object
+        (
+            [REC_BUY_PCT] =&gt; Decimal?
+        )
+
+    [18] =&gt; stdClass Object
+        (
+            [REC_CHANGE] =&gt; Decimal?
+        )
+
+    [19] =&gt; stdClass Object
+        (
+            [REC_SELL_PCT] =&gt; Decimal?
+        )
+
+    [20] =&gt; stdClass Object
+        (
+            [REC_HOLD_PCT] =&gt; Decimal?
+        )
+
+    [21] =&gt; stdClass Object
+        (
+            [REC_VAL] =&gt; Double?
+        )
+
+    [22] =&gt; stdClass Object
+        (
+            [RECOMENDATION_NAME] =&gt; String?
+        )
+
+    [23] =&gt; stdClass Object
+        (
+            [TARGET_PRICE] =&gt; Decimal?
+        )
+
+    [24] =&gt; stdClass Object
+        (
+            [TP_CHNG] =&gt; Decimal?
+        )
+
+    [25] =&gt; stdClass Object
+        (
+            [TP_CHNG_PCT] =&gt; Decimal?
+        )
+
+    [26] =&gt; stdClass Object
+        (
+            [TP_CHNG_M] =&gt; Decimal?
+        )
+
+    [27] =&gt; stdClass Object
+        (
+            [TP_CHNG_Q] =&gt; Decimal?
+        )
+
+    [28] =&gt; stdClass Object
+        (
+            [TP_CHNG_Y] =&gt; Decimal?
+        )
+
+    [29] =&gt; stdClass Object
+        (
+            [TP_CHNG_M_PCT] =&gt; Decimal?
+        )
+
+    [30] =&gt; stdClass Object
+        (
+            [TP_CHNG_Q_PCT] =&gt; Decimal?
+        )
+
+    [31] =&gt; stdClass Object
+        (
+            [TP_CHNG_Y_PCT] =&gt; Decimal?
+        )
+
+    [32] =&gt; stdClass Object
+        (
+            [TP_HIGH] =&gt; Decimal?
+        )
+
+    [33] =&gt; stdClass Object
+        (
+            [TP_LOW] =&gt; Decimal?
+        )
+
+    [34] =&gt; stdClass Object
+        (
+            [TP_MEDIAN] =&gt; Decimal?
+        )
+
+    [35] =&gt; stdClass Object
+        (
+            [TP_DEVIATION] =&gt; Decimal?
+        )
+
+    [36] =&gt; stdClass Object
+        (
+            [UPSIDE_PCT] =&gt; Decimal?
+        )
+
+    [37] =&gt; stdClass Object
+        (
+            [FINTOOLID_LINKED] =&gt; Int64?
+        )
+
+)
