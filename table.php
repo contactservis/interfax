@@ -10,7 +10,7 @@
 <body>
 <?php
 	// чтение файла json
-	$j = file_get_contents( __DIR__ . DIRECTORY_SEPARATOR . 'data.json' ); // в примере все файлы в корне
+	$j = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR); // в примере все файлы в корне
 	$data = json_decode($j);
 	$array = (array) $data;
 	//print_r($array['Rows']);

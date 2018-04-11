@@ -5,12 +5,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/interfaxcss.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/interfax_data.js"></script>
+    <link href="css/open-iconic-bootstrap.css" rel="stylesheet">
 </head>
 <body>
 <?php
 	// чтение файла json
-	$j = file_get_contents( __DIR__ . DIRECTORY_SEPARATOR . 'PriceConsensus.json' ); // в примере все файлы в корне
+	//$j = file_get_contents( __DIR__ . DIRECTORY_SEPARATOR . 'PriceConsensus.json' ); // в примере все файлы в корне
+    $j = file_get_contents(__DIR__ . DIRECTORY_SEPARATOR."/model/consensus.json"); // в примере все файлы в корне
 	$data = json_decode($j);
 	$array = (array) $data;
 	//print_r($array['Columns']);
@@ -18,46 +22,45 @@
 <div class="container">
 	<div class="row">
 	    <div class="col-12">
-			<table class="table table-hover">
+			<table class="table table-hover interfax_prognoz">
 				<thead>
 					<tr class="table-active">
-						<td>ИД Акции</td>
-						<td>Дата обновления</td>
-						<td>Рекомендация</td>
-						<td></td>
-						<td>Название</td>
-						<td>Потенциал в %</td>
-						<td>Цена закрытия</td>
-						<td>Прогноз цены</td>
+						<!--<td>ИД Акции</td>-->
+                        <td>Название <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Дата обновления <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Рекомендация <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Потенциал в % <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Цена закрытия <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Прогноз цены <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
 					</tr>
 				</thead>
 				<tbody>
 					<?php
 						$id = 0;
 						foreach ($array['Rows'] as $item_table) {
-						$id_ak = $item_table[12]; 						 
+						$id_ak = $item_table[13];
 
-						?><?php
-							if($id == $id_ak){
-							 				//echo "одна акция";
-								?><tr><?php
-
-							}else {
-								$class =  'class="table-warning"';
-								?><tr <?=$class?> > <?php
-							}	
-										 $id = $id_ak;								
-							?>	
-								
-								<td><?=$item_table[13]?></td>
-								<td><?=$item_table[0]?></td>
-								<td><?=$item_table[22]?></td>
-								<td><?//=$item_table[26]?></td>
-								<td><?=$item_table[12]?></td>
-								<td><?=$item_table[36]?></td>
-								<td><?=$item_table[3]?></td>
-								<td><?=$item_table[8]?></td>						
-							</tr>
+						?><tr>
+								<!--<td><?/*=$item_table[13]*/?></td>-->
+                                <td><?=$item_table[12]?></td>
+                                <td class="text-center"><?php
+                                    echo strstr($item_table[0], 'T', true);
+								?></td>
+								<td class="text-center"><?=$item_table[22]?></td>
+                                <td class="text-center"><?php
+                                    if ($item_table[36] >0 ) {
+                                        echo "<span class='text-success'>".$item_table[36]."</span>";
+                                    } else {
+                                        echo "<span class='text-danger'>".$item_table[36]."</span>";
+                                    }
+                                 ?></td>
+								<td class="text-center"><?php
+                                        echo number_format($item_table[3], 2, '.', '');
+                                ?></td>
+                                <td class="text-center"><?php
+                                    echo number_format($item_table[8], 2, '.', '');
+                                    ?></td>
+                            </tr>
 					<?php
 						}
 					?>

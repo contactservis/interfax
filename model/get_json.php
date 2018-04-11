@@ -62,11 +62,30 @@
 				return $id_PriceConsensus[$id];
 			}
 		}
+
+		// метод для получения консенсус прогноза по акциям
+		function get_TargetPrices($id=0){			
+			$j = file_get_contents( __DIR__ . DIRECTORY_SEPARATOR . 'TargetPrices.json' ); // в примере все файлы в корне
+			$data = json_decode($j);
+			$array = (array) $data;
+			$all_TargetPrices = $array['Rows'];
+			$id_TargetPrices = array();
+			
+			foreach ($all_TargetPrices as $item) {
+				$id_TargetPrices[$item[13]] = $item ; 
+			}
+			
+			if ($id == 0){								
+				return $id_TargetPrices;
+			} else {				
+				return $id_TargetPrices[$id];
+			}
+		}
 	}
 
 
-	$PriceConsensus = new Get_Forecast();
-	print_r($PriceConsensus->get_PriceConsensus(25150));
+/*	$PriceConsensus = new Get_Forecast();
+	print_r($PriceConsensus->get_PriceConsensus(25150));*/
 
 
 ?>
