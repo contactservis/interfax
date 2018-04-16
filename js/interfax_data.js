@@ -15,6 +15,7 @@ $( document ).ready(function() {
 
         var sort        = $(this).children('span').attr('class');
         var sort_fild   = $(this).attr('data');
+        var table       = $(this).attr('table');
         var sortab      = 'ASC';
 
         if (sort == 'oi oi-sort-descending') {
@@ -23,9 +24,9 @@ $( document ).ready(function() {
         }else {
             sortab = 'ASC';
         }
-
+        console.log('model/sort_data.php?sort_ad='+sortab+'&sort_fild='+sort_fild+'&table='+table);
         $.ajax({
-            url: 'model/sort_data.php?sort_ad='+sortab+'&sort_fild='+sort_fild,
+            url: 'model/sort_data.php?sort_ad='+sortab+'&sort_fild='+sort_fild+'&table='+table,
             success: function(data){
                 // вывод полученных данных
                 $('#tabl_prognoz').html(data);

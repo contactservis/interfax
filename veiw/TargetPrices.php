@@ -1,7 +1,8 @@
 <?php foreach ($arrInvestDoms as $item_table) { ?>
         <tr>
-            <td><?=$item_table[1]?> <div id="show_prognoz" data="<?=$item_table[0]?>" >Прогнозы <span class="oi oi-caret-bottom"></span></div></td>
-            <td colspan="6"></td>
+            <td><img src="img/<?=$item_table[0]?>.png"><?=$item_table[1]?></td>
+            <td><div id="show_prognoz" data="<?=$item_table[0]?>" >Прогнозы <span class="oi oi-caret-bottom"></span></div></td>
+            <td colspan="4"></td>
         </tr>
     <?php
     // прогнозы инвест домов

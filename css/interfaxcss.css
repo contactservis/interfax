@@ -9,6 +9,16 @@
     font-size: 8px;
 }
 
+.interfax_prognoz div.botton_off {  
+    font-size: 13px;
+    margin-left: 5px;
+    color: #525252;
+}
+
+.interfax_prognoz div.botton_off span {
+    font-size: 8px;
+}
+
 .interfax_prognoz .name_ii {
     padding-left: 40px;
 }

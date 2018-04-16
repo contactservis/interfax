@@ -3,7 +3,7 @@
     <thead>
     <tr class="table-active">
         <td style="width: 30%;">
-            <div data="12" class="botton_sort">Название <span class="oi oi-sort-ascending"></span></div>
+            <div data="12" table ="consensus" class="botton_sort">Название <span class="oi oi-sort-ascending"></span></div>
         </td>
         <td class="text-center">
             <div data="0" class="botton_sort">Дата обновления <span class="oi oi-sort-ascending"></span></span></div></td>
