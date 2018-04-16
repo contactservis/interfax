@@ -26,22 +26,21 @@
 				<thead>
 					<tr class="table-active">
 						<!--<td>ИД Акции</td>-->
-                        <td>Название <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
-						<td class="text-center">Дата обновления <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
-						<td class="text-center">Рекомендация <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
-						<td class="text-center">Потенциал в % <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
-						<td class="text-center">Цена закрытия <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
-						<td class="text-center">Прогноз цены <div id="sort_name_aktion_ad" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+                        <td>Название <div data="12" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Дата обновления <div data="0" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Рекомендация <div data="22" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Потенциал в % <div data="36" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Цена закрытия <div data="3" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
+						<td class="text-center">Прогноз цены <div data="8" class="botton_sort"><span class="oi oi-caret-bottom"></span></div></td>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="tabl_prognoz">
 					<?php
 						$id = 0;
 						foreach ($array['Rows'] as $item_table) {
 						$id_ak = $item_table[13];
 
 						?><tr>
-								<!--<td><?/*=$item_table[13]*/?></td>-->
                                 <td><?=$item_table[12]?></td>
                                 <td class="text-center"><?php
                                     echo strstr($item_table[0], 'T', true);

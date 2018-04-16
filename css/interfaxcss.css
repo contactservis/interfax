@@ -1,4 +1,70 @@
 .interfax_prognoz div.botton_sort {
-    float: right;
     cursor: pointer;
+    font-size: 13px;
+    margin-left: 5px;
+    color: #525252;
+}
+
+.interfax_prognoz div.botton_sort span {
+    font-size: 8px;
+}
+
+.interfax_prognoz .name_ii {
+    padding-left: 40px;
+}
+
+.interfax_prognoz #show_prognoz {
+    float: right;
+    color: #636c72;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.interfax_prognoz .child {
+    font-size: 13px;
+    display: none;
+}
+
+/*   green head #d5ffd5  read head #f9d2d1*/
+.interfax_prognoz .green_ht{
+    background-color: #d5ffd5;
+}
+
+.interfax_prognoz .red_ht{
+    background-color: #f9d2d1;
+}
+
+.interfax_prognoz .green_st {
+    background-color: #eaffea;
+}
+.interfax_prognoz .red_st {
+    background-color: #f9eaea;
+}
+
+
+.interfax_prognoz .child_h {
+    height: 0px;
+    display: none;
+}
+
+.interfax_prognoz .exchange_name {
+    font-size: 10px;
+}
+
+.interfax_prognoz .ticket {
+    position: absolute;
+    top: 4px;
+    font-size: 11px;
+}
+
+.interfax_prognoz .ticket_bottom {
+    color: red;
+}
+
+.interfax_prognoz .ticket_top {
+    color: green;
+}
+
+.interfax_prognoz .ticket_stop{
+    color: #ffc107;
 }
