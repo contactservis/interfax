@@ -1,13 +1,15 @@
-<?php foreach ($arrInvestDoms as $item_table) { ?>
+<?php foreach ($arrInvestDoms as $item_table) {
+    // прогнозы инвест домов
+    $arPrognII  = $ArrData -> getIDaction($arrTarget, $item_table[0], 17);
+    $kolProgn   = count($arPrognII);
+    ?>
         <tr>
             <td><img src="img/<?=$item_table[0]?>.png"><?=$item_table[1]?></td>
-            <td><div id="show_prognoz" data="<?=$item_table[0]?>" >Прогнозы <span class="oi oi-caret-bottom"></span></div></td>
-            <td colspan="4"></td>
+            <td colspan="3"></td>
+            <td> Прогнозов: <?=$kolProgn?></td>
+            <td><div id="show_prognoz" data="<?=$item_table[0]?>" >Раскрыть <span class="oi oi-caret-bottom"></span></div></td>
         </tr>
     <?php
-    // прогнозы инвест домов
-    $arPrognII = $ArrData -> getIDaction($arrTarget, $item_table[0], 17);
-    //print_r($arPrognII);
         foreach ($arPrognII as $item_tables) {
             ?>
             <tr class="child <?=$item_table[0]?>">

@@ -24,7 +24,7 @@ $( document ).ready(function() {
         }else {
             sortab = 'ASC';
         }
-        console.log('model/sort_data.php?sort_ad='+sortab+'&sort_fild='+sort_fild+'&table='+table);
+
         $.ajax({
             url: 'model/sort_data.php?sort_ad='+sortab+'&sort_fild='+sort_fild+'&table='+table,
             success: function(data){
